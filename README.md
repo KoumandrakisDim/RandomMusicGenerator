@@ -7,6 +7,5 @@ Random chords[C D A
 , C B G 
 , B A E 
 ]
-![Ανώνυμο-1](https://user-images.githubusercontent.com/118050744/201640834-63678131-0486-4f34-b543-03dc61ae2e4e.png)
-
-![Computer music2-1](https://user-images.githubusercontent.com/118050744/201639988-c4a1c158-f575-4142-989c-fbf6469bef72.svg)
+![Computer music-1](https://user-images.githubusercontent.com/118050744/201641892-cb8d310c-0e8c-4262-9f88-59d828bc336d.png)
+![Computer music-1](https://user-images.githubusercontent.com/118050744/201641509-e5ebd096-93a2-4267-a680-21ca727e4e97.png)
