@@ -3,8 +3,8 @@ import java.util.ArrayList;
 public class RandomMusicComposition {
 
     public static void main(String[] args) {
-        int numberOfChords = 4;
-        System.out.println("Random chords" + createChordProgression(numberOfChords));
+        final int NUMBEROFCORDS = 4;
+        System.out.println("Random chords" + createChordProgression(NUMBEROFCORDS));
 
     }
 
@@ -19,17 +19,17 @@ public class RandomMusicComposition {
     }
 
     public static String generateChord() {
-        int maxNote = 10;
+        int maxNote = 7;
         int minNote = 1;
         int firstNote = (int) (Math.random()*(maxNote - minNote)+minNote); //first note has range 1-7
 
         int secondNote = (int) (Math.random()*(maxNote - minNote)+minNote); //second note is bigger than the first
-        while(firstNote % 7 == secondNote % 7){
+        while(firstNote == secondNote){
             secondNote = (int) (Math.random()*(maxNote - minNote)+minNote); //second note is bigger than the first
         }
         int thirdNote = (int) (Math.random()*(maxNote - minNote)+minNote); //third note is bigger than the second
 
-        while(firstNote % 7 == thirdNote % 7 || thirdNote % 7 == secondNote % 7){
+        while(firstNote == thirdNote || thirdNote == secondNote){
             thirdNote = (int) (Math.random()*(maxNote - minNote)+minNote); //second note is bigger than the first
         }
 
@@ -42,19 +42,19 @@ public class RandomMusicComposition {
 
     public static String mapNote(int note) {
         String strNote = "";
-        if (note % 7 == 1)
+        if (note == 1)
             return "A";
-        if (note % 7 == 2)
+        if (note == 2)
             return "B";
-        if (note % 7 == 3)
+        if (note == 3)
             return "C";
-        if (note % 7 == 4)
+        if (note == 4)
             return "D";
-        if (note % 7 == 5)
+        if (note == 5)
             return "E";
-        if (note % 7 == 6)
+        if (note == 6)
             return "F";
-        if (note % 7 == 0)
+        if (note == 0)
             return "G";
 
         return strNote;
